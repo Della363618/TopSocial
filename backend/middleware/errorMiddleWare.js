@@ -1,4 +1,4 @@
-const handleErrors = function(error,req,res, next){
+const handleErrors = function(err,req,res, next){
     console.error(err.stack); //方便debug；
     const statusCode = err.statusCode || 500 ;
     const message = err.message || "internal server error" ;
